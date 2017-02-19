@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3709FFBE-3A6F-45E3-87A6-6D7421E380DD}</ProjectGuid>
+    <RootNamespace>UInterfaceLib</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(FrameworkSDKDir)\include;E:\DXSDK\Samples\C++\DirectShow\BaseClasses;E:\DXSDK\Include;E:\Opencv%282.4.8%29\opencv\build\include;E:\Opencv%282.4.8%29\opencv\build\include\opencv2;E:\Opencv%282.4.8%29\opencv\build\include\opencv;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;E:\boost_1_58_0</IncludePath>
+    <LibraryPath>E:\DXSDK\Lib;E:\boost_1_58_0\vc2010\lib;E:\Opencv%282.4.8%29\opencv\build\x86\vc10\lib;E:\Opencv%282.4.8%29\opencv\build\x86\vc10\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(FrameworkSDKDir)\include;E:\DXSDK\Samples\C++\DirectShow\BaseClasses;E:\DXSDK\Include;E:\Opencv%282.4.8%29\opencv\build\include;E:\Opencv%282.4.8%29\opencv\build\include\opencv2;E:\Opencv%282.4.8%29\opencv\build\include\opencv;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;E:\boost_1_58_0</IncludePath>
+    <LibraryPath>E:\DXSDK\Lib;E:\boost_1_58_0\vc2010\lib;E:\Opencv%282.4.8%29\opencv\build\x86\vc10\lib;E:\Opencv%282.4.8%29\opencv\build\x86\vc10\staticlib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\UInterfaceLib.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>F:\软件开发\P_PC\K 界面库\UInterfaceLib\UInterfaceLib\mysql;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;mysqlcppconn-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\UInterfaceLib.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>.\mysql;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mysqlcppconn.lib;mysqlcppconn-static.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\UI-RBAS.ico" />
+    <None Include="res\UInterfaceLib.rc2" />
+    <None Include="UInterfaceLib.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CCamDealData.cpp" />
+    <ClCompile Include="CCaptureVideo.cpp" />
+    <ClCompile Include="CCFileIni.cpp" />
+    <ClCompile Include="CCFileXml.cpp" />
+    <ClCompile Include="CCFtpCtrll.cpp" />
+    <ClCompile Include="CConfigBase.cpp" />
+    <ClCompile Include="CCProjectInfo.cpp" />
+    <ClCompile Include="CCSoftUpdate.cpp" />
+    <ClCompile Include="CDBbase.cpp" />
+    <ClCompile Include="CExportExcel.cpp" />
+    <ClCompile Include="COwnerListCtrl.cpp" />
+    <ClCompile Include="COwnerPicSta.cpp" />
+    <ClCompile Include="CDShowMessage.cpp" />
+    <ClCompile Include="CommTools.cpp" />
+    <ClCompile Include="COwnerButton.cpp" />
+    <ClCompile Include="COwnerListBox.cpp" />
+    <ClCompile Include="CSqliteCtrl.cpp" />
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="SerialTools\CCmdStation.cpp" />
+    <ClCompile Include="SerialTools\CSerialCom.cpp" />
+    <ClCompile Include="sqlite\CppSQLite3U.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UInterfaceLib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CCamDealData.h" />
+    <ClInclude Include="CCaptureVideo.h" />
+    <ClInclude Include="CCFileIni.h" />
+    <ClInclude Include="CCFileXml.h" />
+    <ClInclude Include="CCFtpCtrl.h" />
+    <ClInclude Include="CConfigBase.h" />
+    <ClInclude Include="CCProjectInfo.h" />
+    <ClInclude Include="CCSoftUpdate.h" />
+    <ClInclude Include="CDBbase.h" />
+    <ClInclude Include="CExportExcel.h" />
+    <ClInclude Include="COwnerListCtrl.h" />
+    <ClInclude Include="COwnerPicSta.h" />
+    <ClInclude Include="CDShowMessage.h" />
+    <ClInclude Include="CommTools.h" />
+    <ClInclude Include="COwnerButton.h" />
+    <ClInclude Include="COwnerListBox.h" />
+    <ClInclude Include="CSqliteCtrl.h" />
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="export_include\UCommonToolsDefine.h" />
+    <ClInclude Include="export_include\UDataBase.h" />
+    <ClInclude Include="export_include\UInterface.h" />
+    <ClInclude Include="export_include\UOwnCtrlDefine.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SerialTools\CCmdStation.h" />
+    <ClInclude Include="SerialTools\CSerialCom.h" />
+    <ClInclude Include="sqlite\CppSQLite3U.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UInterfaceLib.h" />
+    <ClInclude Include="ULib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UInterfaceLib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UInterfaceLib.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

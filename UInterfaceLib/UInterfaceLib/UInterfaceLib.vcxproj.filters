@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{c70e1d14-98f8-4b6b-82d7-b6190436cede}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{8a303a56-98e3-4f21-a65b-0641ff0d5d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConfigFile">
+      <UniqueIdentifier>{9493a55f-5c53-400e-abc3-a4354755daa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase\SQLite">
+      <UniqueIdentifier>{a18b9472-ae90-4ce0-ba16-33d393563996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cam">
+      <UniqueIdentifier>{ebbb51db-2502-4356-a650-e11fac53694c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OwnTools">
+      <UniqueIdentifier>{1e3b54fa-ad32-4097-9161-ff01b26fb3bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Net">
+      <UniqueIdentifier>{f5b58cbf-9c23-4df0-8471-f19dce5cf3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Private">
+      <UniqueIdentifier>{2ae5fb12-e337-4f21-be76-9073ef508087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SoftWare">
+      <UniqueIdentifier>{f57e6fca-969a-4cdd-82e1-b58b6188223a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommTools">
+      <UniqueIdentifier>{d5685d27-42be-4819-9726-7aac4bfdd4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{9a3b0738-be46-49f7-948b-2d96df64cb08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SerialTools">
+      <UniqueIdentifier>{435e1a27-1f57-453e-a1cc-9c094400a8a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="UInterfaceLib.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\UInterfaceLib.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\UI-RBAS.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UInterfaceLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CCFileIni.cpp">
+      <Filter>ConfigFile</Filter>
+    </ClCompile>
+    <ClCompile Include="CCFileXml.cpp">
+      <Filter>ConfigFile</Filter>
+    </ClCompile>
+    <ClCompile Include="CConfigBase.cpp">
+      <Filter>ConfigFile</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite\CppSQLite3U.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CSqliteCtrl.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CCamDealData.cpp">
+      <Filter>Cam</Filter>
+    </ClCompile>
+    <ClCompile Include="CCaptureVideo.cpp">
+      <Filter>Cam</Filter>
+    </ClCompile>
+    <ClCompile Include="COwnerPicSta.cpp">
+      <Filter>OwnTools</Filter>
+    </ClCompile>
+    <ClCompile Include="COwnerListCtrl.cpp">
+      <Filter>OwnTools</Filter>
+    </ClCompile>
+    <ClCompile Include="COwnerListBox.cpp">
+      <Filter>OwnTools</Filter>
+    </ClCompile>
+    <ClCompile Include="COwnerButton.cpp">
+      <Filter>OwnTools</Filter>
+    </ClCompile>
+    <ClCompile Include="CDShowMessage.cpp">
+      <Filter>OwnTools</Filter>
+    </ClCompile>
+    <ClCompile Include="CCFtpCtrll.cpp">
+      <Filter>Net</Filter>
+    </ClCompile>
+    <ClCompile Include="CCProjectInfo.cpp">
+      <Filter>SoftWare</Filter>
+    </ClCompile>
+    <ClCompile Include="CCSoftUpdate.cpp">
+      <Filter>SoftWare</Filter>
+    </ClCompile>
+    <ClCompile Include="CDBbase.cpp">
+      <Filter>DataBase</Filter>
+    </ClCompile>
+    <ClCompile Include="CExportExcel.cpp">
+      <Filter>CommTools</Filter>
+    </ClCompile>
+    <ClCompile Include="CommTools.cpp">
+      <Filter>CommTools</Filter>
+    </ClCompile>
+    <ClCompile Include="CvvImage.cpp">
+      <Filter>Private</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialTools\CCmdStation.cpp">
+      <Filter>SerialTools</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialTools\CSerialCom.cpp">
+      <Filter>SerialTools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UInterfaceLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite\CppSQLite3U.h">
+      <Filter>DataBase\SQLite</Filter>
+    </ClInclude>
+    <ClInclude Include="ULib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="export_include\UCommonToolsDefine.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="export_include\UDataBase.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="export_include\UInterface.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="export_include\UOwnCtrlDefine.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="CConfigBase.h">
+      <Filter>ConfigFile</Filter>
+    </ClInclude>
+    <ClInclude Include="CCFileIni.h">
+      <Filter>ConfigFile</Filter>
+    </ClInclude>
+    <ClInclude Include="CCFileXml.h">
+      <Filter>ConfigFile</Filter>
+    </ClInclude>
+    <ClInclude Include="CDBbase.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CSqliteCtrl.h">
+      <Filter>DataBase</Filter>
+    </ClInclude>
+    <ClInclude Include="CCamDealData.h">
+      <Filter>Cam</Filter>
+    </ClInclude>
+    <ClInclude Include="CCaptureVideo.h">
+      <Filter>Cam</Filter>
+    </ClInclude>
+    <ClInclude Include="CDShowMessage.h">
+      <Filter>OwnTools</Filter>
+    </ClInclude>
+    <ClInclude Include="COwnerButton.h">
+      <Filter>OwnTools</Filter>
+    </ClInclude>
+    <ClInclude Include="COwnerListBox.h">
+      <Filter>OwnTools</Filter>
+    </ClInclude>
+    <ClInclude Include="COwnerListCtrl.h">
+      <Filter>OwnTools</Filter>
+    </ClInclude>
+    <ClInclude Include="COwnerPicSta.h">
+      <Filter>OwnTools</Filter>
+    </ClInclude>
+    <ClInclude Include="CCFtpCtrl.h">
+      <Filter>Net</Filter>
+    </ClInclude>
+    <ClInclude Include="CvvImage.h">
+      <Filter>Private</Filter>
+    </ClInclude>
+    <ClInclude Include="CCProjectInfo.h">
+      <Filter>SoftWare</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSoftUpdate.h">
+      <Filter>SoftWare</Filter>
+    </ClInclude>
+    <ClInclude Include="CommTools.h">
+      <Filter>CommTools</Filter>
+    </ClInclude>
+    <ClInclude Include="CExportExcel.h">
+      <Filter>CommTools</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialTools\CCmdStation.h">
+      <Filter>SerialTools</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialTools\CSerialCom.h">
+      <Filter>SerialTools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UInterfaceLib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
